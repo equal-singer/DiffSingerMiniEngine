@@ -1,3 +1,5 @@
+## DiffSinger MIDI-less mode는 버전이 안맞아서 사용불가
+
 Docker Run
 ```
 Docker run -it -p 9266:9266 -v /코드있는 경로:/code --name diff-singer-mini python:3.8 bash
