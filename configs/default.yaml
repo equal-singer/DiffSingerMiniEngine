@@ -2,11 +2,15 @@ dictionary:
   filename: assets/dictionaries/opencpop-strict.txt
   reserved_tokens: 3
 rhythmizer:
-  filename: assets/rhythmizer/1214_opencpop_ds1000_fix_label.rhythmizer.onnx
+  url: https://github.com/equal-singer/DiffSingerMiniEngine/releases/download/v0.0.1/rhythmizer.onnx
+  filename: assets/rhythmizer/rhythmizer.onnx
 acoustic:
+  url: https://github.com/equal-singer/DiffSingerMiniEngine/releases/download/v0.0.1/acoustic.onnx
+  filename: assets/acoustic/acoustic.onnx
   speedup: 10
 vocoder:
-  filename: assets/vocoder/nsf_hifigan_onnx/nsf_hifigan.onnx
+  url: https://github.com/equal-singer/DiffSingerMiniEngine/releases/download/v0.0.1/vocoder.onnx
+  filename: assets/vocoder/vocoder.onnx
   num_mel_bins: 128
   hop_size: 512
   sample_rate: 44100
