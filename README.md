@@ -1,3 +1,25 @@
+Docker Run
+```
+Docker run -it -p 9266:9266 -v /코드있는 경로:/code --name diff-singer-mini python:3.8 bash
+```
+
+디펜던시 설치
+```
+pip install -r requirements.txt
+```
+
+모델 다운로드
+```
+python init.py
+```
+
+서버 실행 (port: 9266)
+```
+python server.py
+```
+
+--------------------------------------
+
 # DiffSingerMiniEngine
 A minimum inference engine for DiffSinger MIDI-less mode.
 
