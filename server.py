@@ -344,7 +344,7 @@ if __name__ == '__main__':
 
     pool = ThreadPoolExecutor(max_workers=config['server']['max_threads'])
 
-    host = ('127.0.0.1', config['server']['port'])
+    host = ('0.0.0.0', config['server']['port'])
     with HTTPServer(host, Request) as server:
         logging.info('Server starting at %s:%s' % host)
         try:
