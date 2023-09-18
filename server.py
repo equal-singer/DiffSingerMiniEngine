@@ -13,8 +13,8 @@ import soundfile
 import synthesis
 import utils
 
-VERSION = '1.0.1'
-DATE = '2023-01-08'
+VERSION = '0.0.1'
+DATE = '2023-09-18'
 SERVER_ROOT = os.path.dirname(os.path.abspath(__file__))
 CONFIG_ROOT = os.path.join(SERVER_ROOT, 'configs')
 ACOUSTIC_ROOT = os.path.join(SERVER_ROOT, 'assets', 'acoustic')
@@ -96,7 +96,7 @@ def submit(request: BaseHTTPRequestHandler):
     """
     Example:
         {
-          "model": "1215_opencpop_ds1000_fix_label_nomidi",
+          "model": "acoustic",
           "phonemes": [
             {
               "name": "SP",

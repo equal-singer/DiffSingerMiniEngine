@@ -134,7 +134,9 @@ dmypy.json
 # Model weights
 *.onnx
 /assets/acoustic/*
+/assets/rhythmizer/*
 /assets/vocoder/*
+/assets/dictionaries/*
 /cache/
 /assets/logs/*
 !/**/.gitkeep

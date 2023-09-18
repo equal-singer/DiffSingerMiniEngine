@@ -1,5 +1,6 @@
 dictionary:
-  filename: assets/dictionaries/opencpop-strict.txt
+  url: https://github.com/equal-singer/DiffSingerMiniEngine/releases/download/v0.0.1/dictionary.txt
+  filename: assets/dictionaries/dictionary.txt
   reserved_tokens: 3
 rhythmizer:
   url: https://github.com/equal-singer/DiffSingerMiniEngine/releases/download/v0.0.1/rhythmizer.onnx

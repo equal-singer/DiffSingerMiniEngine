@@ -14,8 +14,6 @@ def download(url: str, file_name: str):
     block_size = 1024 #1 Kibibyte
     progress_bar = tqdm(total=total_size_in_bytes, unit='iB', unit_scale=True)
 
-    print(total_size_in_bytes)
-
     with open(file_name, "wb") as file:
         for data in response.iter_content(block_size):
             progress_bar.update(len(data))
@@ -31,7 +29,7 @@ def download(url: str, file_name: str):
 if __name__ == '__main__':
     config = load_configs('./configs/default.yaml')
 
-    for key in ['acoustic', 'rhythmizer', 'vocoder']:
+    for key in ['acoustic', 'rhythmizer', 'vocoder', 'dictionary']:
         url = config[key]['url']
         file_name = config[key]['filename']
         download(url, file_name)

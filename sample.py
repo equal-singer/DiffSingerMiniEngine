@@ -23,7 +23,7 @@ dict_pad = -1
 phoneme_list = []
 vowels = set()
 vocoder_path = ''
-cache = ''
+cache = './'
 pool: ThreadPoolExecutor
 tasks = {}
 piles = {}
