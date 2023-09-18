@@ -1,21 +1,39 @@
-## DiffSinger MIDI-less mode는 버전이 안맞아서 사용불가
+# DiffSingerMiniEngine
 
-Docker Run
+### Clone repo
+
 ```
-Docker run -it -p 9266:9266 -v /코드있는 경로:/code --name diff-singer-mini python:3.8 bash
+git clone https://github.com/equal-singer/DiffSingerMiniEngine.git
 ```
 
-디펜던시 설치
+## 도커 이미지를 빌드해서 사용하는 경우
+
+### Docker image build
+```
+Docker build -t diff-singer-engine .
+```
+
+### Docker Run
+```
+Docker run -d -p 9266:9266 --name diff-singer-engine diff-singer-engine
+```
+> 워크스테이션 사양에 맞춰서 `--gpus` 옵션 넣으면 됨
+
+
+## 바로 사용하는 경우
+--------------------------------------
+
+### 디펜던시 설치
 ```
 pip install -r requirements.txt
 ```
 
-모델 다운로드
+### 모델 다운로드
 ```
 python init.py
 ```
 
-서버 실행 (port: 9266)
+### 서버 실행 (port: 9266)
 ```
 python server.py
 ```
